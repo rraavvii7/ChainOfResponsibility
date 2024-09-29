@@ -15,7 +15,7 @@ namespace ChainOfResponsibilityDesignPattern.Impl
 
         public void Execute()
         {
-            if(candidate.Stream == "B Tech")
+            if((new List<string> { "M Tech", "B Tech"}).Contains(candidate.Stream))
             {
                 Console.WriteLine("Screening Round Passed");
             }
